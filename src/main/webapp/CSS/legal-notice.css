@@ -1,0 +1,36 @@
+/* ------------------------------------------------
+--------------- Impressum Seite -------------------
+------------------------------------------------ */
+
+/* main content frame of the page */
+.main-page-body {
+    align-items: center;
+    justify-content: center;
+    height: var(--page-content-height);
+    background-color: var(--secondary-color-darker);
+}
+
+/* container with the legal notice text */
+.main-page-body .legal-notice-container {
+    width: 45%;
+    min-width: 780px;
+    padding: 40px;
+    box-shadow: var(--container-box-shadow);
+}
+
+/* header */
+.main-page-body .legal-notice-container .legal-notice-header {
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+/* text paragraphs */
+.main-page-body .legal-notice-container .legal-notice-text {
+    margin-bottom: 35px;
+    font-size: 1.2em;
+}
+
+/* data block text paragraphs */
+.main-page-body .legal-notice-container .legal-notice-info {
+    align-self: center;
+}

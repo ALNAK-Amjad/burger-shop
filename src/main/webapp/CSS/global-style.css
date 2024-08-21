@@ -1,0 +1,153 @@
+/* ------------------------------------------------
+------ Globales Stylesheet für alle Seiten --------
+------------------------------------------------ */
+
+/* remove default margin and padding from all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* global variables */
+:root {
+    /* default colors */
+    --primary-color-lighter: rgb(248, 175, 0);
+    --primary-color-darker: rgb(223, 156, 0);
+    --secondary-color-lighter: rgb(255, 252, 247);
+    --secondary-color-darker: rgb(247, 247, 247);
+
+    /* default button colors */
+    --primary-button-color: rgb(255, 66, 9);
+    --primary-button-color-hover: rgb(218, 8, 8);
+    --secondary-button-color: rgb(33, 150, 243);
+    --secondary-button-color-hover: rgb(0, 115, 209);
+    --disabled-button-color: rgb(206, 206, 206);
+    --disabled-button-text-color: rgb(83, 83, 83);
+
+    /* default link color */
+    --link-color: rgb(0, 0, 238);
+
+    /* default text input border color */
+    --text-input-field-border-color: rgb(230, 230, 230);
+
+    /* default form container background color */
+    --form-container-background-color: white;
+
+    /* default box-shadow styles */
+    --button-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    --container-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    /* default fonts */
+    --primary-font-family: "Arial", "Helvetica", "sans-serif";
+
+    /* default page size for header, footer and main content */
+    --page-header-height: 5vh;
+    --page-header-min-height: 45px;
+    --page-content-height: 90vh;
+    --page-content-min-height: 600px;
+    --page-footer-height: 5vh;
+    --page-footer-min-height: 45px;
+}
+
+/* remove the default padding and margin from the <body> tag */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* generic flex-row class */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* generic flex-col class */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+/* creates a shadow to emphasize containers by making them look 3-dimensional */
+.default-container-box-shadow {
+    box-shadow: var(--container-box-shadow);
+}
+
+/* general style for all buttons */
+.default-button-primary, .default-button-secondary {
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: var(--button-box-shadow);
+    padding: 8px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+
+    font-family: var(--primary-font-family);
+    font-weight: 600;
+    color: var(--secondary-color-darker);
+
+    transition-property: background-color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+}
+
+/* general style for all primary buttons */
+.default-button-primary {
+    background-color: var(--primary-button-color);
+}
+
+.default-button-primary:hover {
+    background-color: var(--primary-button-color-hover);
+}
+
+/* general style for all secondary buttons */
+.default-button-secondary {
+    background-color: var(--secondary-button-color);
+}
+
+.default-button-secondary:hover {
+    background-color: var(--secondary-button-color-hover);
+}
+
+/* general color for disabled buttons */
+.default-button-primary:disabled, .default-button-secondary:disabled {
+    box-shadow: none;
+    color: var(--disabled-button-text-color);
+    background-color: var(--disabled-button-color);
+    cursor: auto;
+}
+
+/* general font style for all texts */
+.default-font {
+    font-family: var(--primary-font-family);
+}
+
+/* default behaviour and style for clickable links */
+.default-link {
+    text-decoration: none;
+}
+
+.default-link:hover {
+    text-decoration: underline;
+}
+
+.default-link:visited {
+    color: var(--link-color);
+}
+
+/* default form container (for "real" forms with actual input fields) */
+.default-form-container {
+    padding: 50px;
+    box-shadow: var(--container-box-shadow);
+    background-color: var(--form-container-background-color);
+
+    /* flex properties have to be assigned with the flex-col class */
+    align-items: flex-start;
+}
+
+/* default text input field */
+.default-text-input-field {
+    padding: 10px;
+    border: 2px solid var(--text-input-field-border-color);
+}

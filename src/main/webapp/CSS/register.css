@@ -1,0 +1,104 @@
+/* ------------------------------------------------
+------------- Registrierungs Seite ----------------
+------------------------------------------------ */
+
+/* main content frame of the page */
+.main-page-body {
+    align-items: center;
+    justify-content: center;
+    height: var(--page-content-height);
+    background-color: var(--secondary-color-darker);
+
+    /* default variables for the page contents */
+    --form-item-spacer: 30px;
+    --subform-shared-width: 45%;
+}
+
+/* form container that holds all inputs fields etc. */
+.main-page-body .form-container {
+    width: 50%;
+    min-width: 860px;
+    max-width: 1020px;
+    min-height: 500px;
+    max-height: 600px;
+}
+
+/* general header */
+.main-page-body .form-container .register-header-container {
+    margin-bottom: calc(var(--form-item-spacer) + 10px);
+}
+
+/* container holding both input field containers (account data + address data) */
+.main-page-body .form-container .register-data-container {
+    width: 100%;
+}
+
+/* sub headers */
+.main-page-body .form-container .register-data-container .register-sub-header-container {
+    margin-bottom: var(--form-item-spacer);
+    align-self: center;
+}
+
+/* container for the input fields of account data */
+.main-page-body .form-container .register-data-container .register-account-data-container {
+    width: var(--subform-shared-width);
+}
+
+/* container for the input fields of address data */
+.main-page-body .form-container .register-data-container .register-address-data-container {
+    margin-left: auto;
+    width: var(--subform-shared-width);
+}
+
+/* single form field */
+.main-page-body .form-container .form-field {
+    margin: 5px 0;
+    width: 100%;
+}
+
+/* icon + label container before the text input field */
+.main-page-body .form-container .form-field .form-field-label {
+    align-items: center;
+}
+
+/* icon only before the text input field */
+.main-page-body .form-container .form-field .label-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* label only before the text input field */
+.main-page-body .form-container .form-field .label-text {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* text input fields */
+.main-page-body .form-container .form-field .form-field-input {
+    margin-left: auto;
+}
+
+/* text notice container */
+.main-page-body .form-container .no-account-text-container {
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: var(--form-item-spacer);
+    width: 100%;
+}
+
+/* link to the login page */
+.main-page-body .form-container .no-account-text-container .login-forward-link {
+    margin-left: 10px;
+}
+
+/* register submit button container */
+.main-page-body .form-container .form-button-container {
+    margin-top: var(--form-item-spacer);
+    width: 100%;
+}
+
+/* register submit button */
+.main-page-body .form-container .form-button-container .register-button {
+    margin: 0;
+    margin-left: auto;
+}

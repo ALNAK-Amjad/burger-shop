@@ -1,0 +1,81 @@
+/* ------------------------------------------------
+---- Stylesheet für den Header auf allen Seiten ---
+------------------------------------------------ */
+
+/* the main panel consisting the entire header */
+.header-panel {
+    position: sticky;
+    top: 0;
+    left: 0;
+    justify-content: flex-start;
+    height: var(--page-header-height);
+    min-height: var(--page-header-min-height);
+    width: 100%;
+    background-color: var(--primary-color-darker);
+
+    /* variables for child elements */
+    --nav-item-separator-color: rgb(254, 204, 1);
+}
+
+/* container with the logo and clickable link to the homepage */
+.header-panel .header-logo-container {
+    width: 15%;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Burger Paradies logo */
+.header-panel .header-logo-container .header-logo {
+    width: auto;
+    height: 100%;
+    margin: 0 2%;
+}
+
+/* text inside the logo container */
+.header-panel .header-logo-container .header-text {
+    font-family: var(--primary-font-family);
+    font-weight: bolder;
+    font-size: medium;
+    color: black;
+}
+
+/* navigation bar */
+.header-panel .header-nav {
+    width: 50%;
+    align-items: center;
+}
+
+/* single clickable navigation items */
+.header-panel .header-nav-item {
+    font-family: var(--primary-font-family);
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--secondary-color-darker);
+    border-radius: 10px;
+    margin: 0 0.5%;
+    padding: 1.25% 1%;
+}
+
+.header-panel .header-nav-item:hover {
+    background-color: var(--primary-color-lighter);
+}
+
+/* separator line for nav items */
+.header-panel .nav-item-separator {
+    height: 85%;
+    width: 2px;
+    background-color: var(--nav-item-separator-color);
+}
+
+/* button container for the login/profile and logout button */
+.header-panel .login-logout-button-container {
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1%;
+}
+
+/* single buttons */
+.header-panel .action-button {
+    margin: 0 10px;
+}

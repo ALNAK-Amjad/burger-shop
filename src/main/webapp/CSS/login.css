@@ -1,0 +1,89 @@
+/* ------------------------------------------------
+------------------ Login Seite --------------------
+------------------------------------------------ */
+
+/* main content frame of the page */
+.main-page-body {
+    align-items: center;
+    justify-content: center;
+    height: var(--page-content-height);
+    background-color: var(--secondary-color-darker);
+
+    /* default variables for the page contents */
+    --form-item-spacer: 30px;
+}
+
+/* form container that holds all inputs fields etc. */
+.main-page-body .form-container {
+    width: 20%;
+    min-width: 360px;
+    max-width: 400px;
+}
+
+/* header container inside the form */
+.main-page-body .form-container .login-header-container {
+    margin-bottom: var(--form-item-spacer);
+}
+
+/* header inside the form */
+.main-page-body .form-container .login-header-text {
+    text-align: start;
+}
+
+/* single form field */
+.main-page-body .form-container .form-field {
+    margin: 5px 0;
+    width: 100%;
+}
+
+/* icon + label container before the text input field */
+.main-page-body .form-container .form-field .form-field-label {
+    align-items: center;
+}
+
+/* icon only only before the text input field */
+.main-page-body .form-container .form-field .label-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* label only before the text input field */
+.main-page-body .form-container .form-field .label-text {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* text input field for username and password */
+.main-page-body .form-container .form-field .form-field-input {
+    margin-left: auto;
+}
+
+/* error message text that will be displayed on failed login attempt */
+.main-page-body .form-container .error-message-text {
+    color: red;
+    margin-top: var(--form-item-spacer);
+}
+
+/* text notice container */
+.main-page-body .form-container .no-account-text-container {
+    align-items: center;
+    margin-top: var(--form-item-spacer);
+    width: 100%;
+}
+
+/* link to the register page */
+.main-page-body .form-container .no-account-text-container .register-forward-link {
+    margin-left: auto;
+}
+
+/* login submit button container */
+.main-page-body .form-container .form-button-container {
+    margin-top: var(--form-item-spacer);
+    width: 100%;
+}
+
+/* login submit button */
+.main-page-body .form-container .form-button-container .login-button {
+    margin: 0;
+    margin-left: auto;
+}

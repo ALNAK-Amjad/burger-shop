@@ -1,0 +1,36 @@
+/* ------------------------------------------------
+---- Stylesheet für den Footer auf allen Seiten ---
+------------------------------------------------ */
+
+/* the main panel consisting the entire footer */
+.footer-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: var(--page-footer-height);
+    min-height: var(--page-footer-min-height);
+    width: 100%;
+    background-color: var(--primary-color-darker);
+    justify-content: center;
+}
+
+/* container with the copyright symbol and company name */
+.footer-panel .footer-copy-right-container {
+    justify-content: center;
+    margin-right: 5vw;
+}
+
+/* copyright text */
+.footer-panel .footer-copyright-text {
+    color: rgb(241, 241, 241);
+}
+
+/* container with all links to the appropiate pages */
+.footer-panel .footer-link-container {
+    align-items: center;
+}
+
+/* the clickable link itself */
+.footer-panel .footer-link {
+    margin-right: 2.5vw;
+}

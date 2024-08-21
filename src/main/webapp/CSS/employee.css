@@ -1,0 +1,104 @@
+/* ------------------------------------------------
+-------------- Mitarbeiter Seite ------------------
+------------------------------------------------ */
+
+/* main content frame of the page */
+.main-page-body {
+    align-items: center;
+    justify-content: center;
+    height: var(--page-content-height);
+    background-color: var(--secondary-color-darker);
+
+    /* default variables for the page contents */
+    --order-list-and-detail-shared-height: 70vh;
+    --order-list-and-detail-shared-padding: 40px;
+    --order-item-font-size: 1.4em;
+    --order-item-option-font-size: 1.2em;
+    --margin-bottom-spacer: 25px;
+}
+
+/* complete order list of all existing orders */
+.main-page-body .order-list {
+    width: 25%;
+    min-width: 400px;
+    height: var(--order-list-and-detail-shared-height);
+    padding: var(--order-list-and-detail-shared-padding);
+    box-shadow: var(--container-box-shadow);
+    overflow-y: auto;
+    margin-right: 40px;
+}
+
+/* order list header */
+.main-page-body .order-list .order-list-header {
+    margin-bottom: var(--margin-bottom-spacer);
+}
+
+/* order tile */
+.main-page-body .order-list .m-order-tile {
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+/* order details of a selected order */
+.main-page-body .order-detail {
+    width: 25%;
+    min-width: 400px;
+    height: var(--order-list-and-detail-shared-height);
+    padding: var(--order-list-and-detail-shared-padding);
+    box-shadow: var(--container-box-shadow);
+}
+
+/* order detail header */
+.main-page-body .order-detail .order-detail-header {
+    margin-bottom: var(--margin-bottom-spacer);
+}
+
+/* container with order details */
+.main-page-body .order-detail .order-detail-container {
+    margin-bottom: var(--margin-bottom-spacer);
+}
+
+/* delivery address header */
+.main-page-body .order-detail .order-detail-container .order-detail-address-header {
+    margin-top: calc(var(--margin-bottom-spacer) - 5px);
+    margin-bottom: calc(var(--margin-bottom-spacer) - 15px);
+}
+
+/* ordered item list */
+.main-page-body .order-detail .order-detail-items {
+    outline: black solid 1px;
+    overflow-y: auto;
+}
+
+/* order items header */
+.main-page-body .order-detail .order-detail-items-header {
+    margin-bottom: calc(var(--margin-bottom-spacer) - 15px);
+}
+
+/* order item main container */
+.main-page-body .order-detail .order-detail-items .order-item {
+    margin: 5px;
+}
+
+/* order item name */
+.main-page-body .order-detail .order-detail-items .order-item .order-item-info-container .order-item-name {
+    font-size: var(--order-item-font-size);
+}
+
+/* order item price */
+.main-page-body .order-detail .order-detail-items .order-item .order-item-info-container .order-item-price {
+    font-size: var(--order-item-font-size);
+    margin-left: auto;
+}
+
+/* order item option name */
+.main-page-body .order-detail .order-detail-items .order-item .order-item-options-container .order-item-option-name {
+    font-size: var(--order-item-option-font-size);
+    margin-left: 10px;
+}
+
+/* order item option price */
+.main-page-body .order-detail .order-detail-items .order-item .order-item-options-container .order-item-option-price {
+    font-size: var(--order-item-option-font-size);
+    margin-left: auto;
+}

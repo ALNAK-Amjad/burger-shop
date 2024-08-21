@@ -1,0 +1,31 @@
+/* ------------------------------------------------
+----------------- Kontakt Seite -------------------
+------------------------------------------------ */
+
+/* main content frame of the page */
+.main-page-body {
+    align-items: center;
+    justify-content: center;
+    height: var(--page-content-height);
+    background-color: var(--secondary-color-darker);
+}
+
+/* container with the contact text */
+.main-page-body .contact-container {
+    width: 20%;
+    min-width: 340px;
+    padding: 40px;
+    box-shadow: var(--container-box-shadow);
+}
+
+/* header */
+.main-page-body .contact-container .contact-header {
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+/* text paragraphs */
+.main-page-body .contact-container .contact-text {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}

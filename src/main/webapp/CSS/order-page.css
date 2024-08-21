@@ -1,0 +1,222 @@
+/* ------------------------------------------------
+------------------ Bestellseite -------------------
+------------------------------------------------ */
+
+/* default variables for the page contents */
+body {
+    --product-font-size: 28px;
+    --order-list-shopping-cart-height: 70vh;
+}
+
+/* main content of page */
+.main-page-body {
+    width: 100%;
+    height: var(--page-content-height);
+    background-color: var(--secondary-color-darker);
+}
+
+/* menubar for product groups */
+.main-page-body > .product-group-bar {
+    position: sticky;
+    top: var(--page-header-height);
+    height: 10vh;
+    width: 100%;
+    padding-left: 10%;
+    margin: 0px;
+    box-sizing: border-box;
+
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--primary-color-lighter);
+}
+
+/* menubar for product groups */
+.main-page-body > .product-group-bar > .product-filter-button {
+    margin-right: 20px;
+}
+
+/* order frame containing both the product list and the cart */
+.main-page-body > .order-frame {
+    width: 100%;
+    height: auto;
+    background-color: var(--secondary-color-darker);
+}
+
+/* list of all available products */
+.main-page-body > .order-frame > #order-list {
+    margin: 2.5%;
+    margin-right: 0;
+    width: 65%;
+    height: var(--order-list-shopping-cart-height);
+    overflow-y: scroll;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    background-color: var(--secondary-color-lighter);
+    box-shadow: var(--container-box-shadow);
+}
+
+/* product frame displaying all product information, options and the add button */
+.main-page-body > .order-frame > #order-list > .product-item-container {
+    margin: 2.5%;
+    margin-right: 0;
+    width: 30%;
+    min-height: 200px;
+    height: auto;
+    max-height: 250px;
+
+    flex-wrap: wrap;
+    align-items: center;
+
+    background-color: var(--secondary-color-lighter);
+    outline: black solid 1px;
+}
+
+/* text inside the order list */
+.main-page-body > .order-frame > #order-list > .product-item-container > .product-name, .product-price {
+    font-size: var(--product-font-size);
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+/* container with all options from a single item in the order list */
+.main-page-body > .order-frame > #order-list > .product-item-container > .product-item-options {
+    align-self: flex-start;
+    margin: 10px 0 10px 10px;
+}
+
+/* container with checkbox and label of the selectable options */
+.main-page-body > .order-frame > #order-list > .product-item-container > .product-item-options > .product-order-checkbox-container {
+    align-content: flex-start;
+}
+
+/* single checkbox for the selectable options */
+.main-page-body > .order-frame > #order-list > .product-item-container > .product-item-options > .product-order-checkbox-container > .product-order-checkbox {
+    margin-right: 5px;
+}
+
+/* button to add a product to the cart */
+.main-page-body > .order-frame > #order-list > .product-item-container > .product-order-button {
+    margin-top: auto;
+    height: auto;
+}
+
+/* shopping cart including header, cart list and order button */
+.main-page-body > .order-frame > .shopping-cart {
+    margin: 2.5%;
+    margin-right: 0;
+    width: 25%;
+    height: var(--order-list-shopping-cart-height);
+
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: var(--secondary-color-lighter);
+    box-shadow: var(--container-box-shadow);
+}
+
+/* header text of the shopping cart */
+.main-page-body > .order-frame > .shopping-cart > .shopping-cart-header {
+    margin: 2% 0;
+}
+
+/* the actual list with all items */
+.main-page-body > .order-frame > .shopping-cart > .shopping-cart-list {
+    overflow-y: scroll;
+    outline: black solid 1px;
+    width: 90%;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+/* displays a single item including text and delete button */
+.main-page-body > .order-frame > .shopping-cart > .shopping-cart-list > .shopping-cart-item {
+    width: 95%;
+    margin: 5px;
+}
+
+/* container to display the main information of an item */
+.main-page-body > .order-frame > .shopping-cart > .shopping-cart-list > .shopping-cart-item > .shopping-cart-item-main-info {
+    justify-content: flex-start;
+    width: 100%;
+}
+
+/* general product text including price tag in the cart */
+.main-page-body > .order-frame > .shopping-cart > .shopping-cart-list > .shopping-cart-item > .shopping-cart-item-main-info > .product-cart-text {
+    font-size: calc(var(--product-font-size) - 4px);
+    text-align: start;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+/* product price tag in the cart */
+.main-page-body > .order-frame > .shopping-cart > .shopping-cart-list > .shopping-cart-item > .shopping-cart-item-main-info > .product-cart-price {
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+/* delete button for an item in the cart */
+.main-page-body > .order-frame > .shopping-cart > .shopping-cart-list > .shopping-cart-item > .shopping-cart-item-main-info > .cart-delete-button {
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    border: none;
+
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/delete-button.png');
+}
+
+.main-page-body > .order-frame > .shopping-cart > .shopping-cart-list > .shopping-cart-item > .shopping-cart-item-main-info > .cart-delete-button:hover {
+    background-color: rgb(190, 222, 253);
+}
+
+/* container with the seleted options of an item in the cart */
+.main-page-body > .order-frame > .shopping-cart > .shopping-cart-list > .shopping-cart-item > .shopping-cart-item-options {
+    width: 100%;
+    margin-left: 10px;
+    justify-content: flex-start;
+}
+
+.main-page-body > .order-frame > .shopping-cart > .shopping-cart-list > .shopping-cart-item > .shopping-cart-item-options > .product-cart-option-text {
+    font-size: calc(var(--product-font-size) - 12px);
+    text-align: start;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+/* field to display the total price */
+.main-page-body > .order-frame > .shopping-cart > .shopping-cart-total-price {
+    font-size: calc(var(--product-font-size) - 8px);
+    text-align: end;
+    margin-right: 15%;
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+/* button container with the delete all and order submit button */
+.main-page-body > .order-frame > .shopping-cart > .shopping-cart-button-container {
+    justify-content: center;
+    width: 100%;
+}
+
+/* remove the properties of the buttons when they are inside the <form> tag and give the margin to the form itself */
+.main-page-body > .order-frame > .shopping-cart > .shopping-cart-button-container > form {
+    margin: 0 2%;
+}
+
+/* order submit button in the cart */
+.main-page-body > .order-frame > .shopping-cart > .shopping-cart-button-container > .cart-submit-button {
+    margin-right: 2%;
+}
+
+/* delete all button in the cart */
+.main-page-body > .order-frame > .shopping-cart > .shopping-cart-button-container > .cart-delete-all-button {
+    margin-left: 2%;
+}

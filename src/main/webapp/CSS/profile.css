@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 13%;
+    font-family: var(--primary-font-family);
+    font-size: 20px;
+}
+
+.login-registrierung {
+    background-color: #5b7743;
+}
+
+.buttonLR {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#register-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.register-login-button {
+    border: 0;
+}
+
+.container form {
+    display: flex;
+    justify-content: center;
+    font-family: var(--primary-font-family);
+    font-size: 20px;
+    background-color: white;
+    outline: black solid 1px;
+    box-shadow: var(--container-box-shadow);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    min-width: 400px;
+    min-height: 170px;
+    column-gap: 10px;
+    height: 180px;
+}
+
+.main-Login-class {
+    display: flex;
+    justify-content: center;
+    padding-top: 13%;
+
+}
+
+.main-register-profile-class {
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+}
+
+.RegisterBorder {
+    display: flex;
+    justify-content: center;
+    font-family: var(--primary-font-family);
+    font-size: 16px;
+    background-color: white;
+    outline: black solid 1px;
+    box-shadow: var(--container-box-shadow);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    min-width: 420px;
+    min-height: 200px;
+    column-gap: 10px;
+    height: 500px;
+    width: 40%;
+}
+
+.login-registrierung {
+    background-color: #5b7743;
+}
+
+.container-profile{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 7%;
+}
+
+.profile-data{
+    display: flex;
+    justify-content: center;
+    font-family: var(--primary-font-family);
+    font-size: 16px;
+    background-color: white;
+    outline: black solid 1px;
+    box-shadow: var(--container-box-shadow);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    min-width: 420px;
+    min-height: 200px;
+    column-gap: 10px;
+    height: 350px;
+    width: 30%;
+}
+
+.order-list-profile-page{
+    display: flex;
+    justify-content: space-around;
+}
+
+.order-list{
+    display: flex;
+    justify-content: center;
+    font-family: var(--primary-font-family);
+    font-size: 16px;
+    background-color: white;
+    outline: black solid 1px;
+    box-shadow: var(--container-box-shadow);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    min-width: 420px;
+    min-height: 200px;
+    column-gap: 10px;
+    height: 320px;
+    width: 30%;
+}

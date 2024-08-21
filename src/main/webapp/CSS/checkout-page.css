@@ -1,0 +1,150 @@
+/* ------------------------------------------------
+---------------- Checkout Seite -------------------
+------------------------------------------------ */
+
+/* main content frame of the page */
+.main-page-body {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: var(--page-content-height);
+    background-color: var(--secondary-color-darker);
+
+    /* default variables for page content */
+    --form-item-spacer: 25px;
+    --form-and-cart-shared-width: 25%;
+    --form-and-cart-shared-min-width: 420px;
+    --form-and-cart-shared-height: 70vh;
+    --form-and-cart-shared-min-height: 640px;
+    --cart-item-font-size: 26px;
+    --cart-item-option-font-size: calc(var(--cart-item-font-size) - 6px);
+}
+
+/* order form container */
+.main-page-body .order-form {
+    width: var(--form-and-cart-shared-width);
+    min-width: var(--form-and-cart-shared-min-width);
+    height: var(--form-and-cart-shared-height);
+    min-height: var(--form-and-cart-shared-min-height);
+    margin-right: 50px;
+}
+
+/* order form header "Bestelldaten" */
+.main-page-body .order-form .order-header-container {
+    margin-bottom: calc(var(--form-item-spacer) + 10px);
+}
+
+/* form for address data */
+.main-page-body .order-form .address-form {
+    width: 100%;
+    margin-bottom: var(--form-item-spacer);
+}
+
+/* order form sub header */
+.main-page-body .order-form .address-form .order-sub-header-text {
+    align-self: center;
+    margin-bottom: var(--form-item-spacer);
+}
+
+/* single form field */
+.main-page-body .order-form .address-form .form-field {
+    align-items: center;
+    margin: 5px 0;
+    width: 100%;
+}
+
+/* label for text input field */
+.main-page-body .order-form .address-form .form-field .label-text {
+    font-weight: bold;
+}
+
+/* text input fields */
+.main-page-body .order-form .address-form .form-field .form-input-text {
+    margin-left: auto;
+}
+
+/* ---------------------------------------------------- */
+
+/* form for payment method */
+.main-page-body .order-form .payment-method-form {
+    width: 100%;
+    margin-bottom: var(--form-item-spacer);
+}
+
+/* order form sub header */
+.main-page-body .order-form .payment-method-form .order-sub-header-text {
+    align-self: center;
+    margin-bottom: var(--form-item-spacer);
+}
+
+.main-page-body .order-form .payment-method-form .form-field-container {
+    justify-content: space-evenly;
+}
+
+/* ---------------------------------------------------- */
+
+/* submit button to place an order */
+.main-page-body .order-form .checkout-submit-button {
+    margin-top: auto;
+    align-self: center;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* shopping cart list with all products for checkout */
+.main-page-body .shopping-cart {
+    width: var(--form-and-cart-shared-width);
+    min-width: var(--form-and-cart-shared-min-width);
+    height: var(--form-and-cart-shared-height);
+    min-height: var(--form-and-cart-shared-min-height);
+    padding: 50px;
+    box-shadow: var(--container-box-shadow);
+}
+
+/* cart header "Warenkorb" */
+.main-page-body .shopping-cart .cart-header-container {
+    align-self: center;
+    margin-bottom: calc(var(--form-item-spacer) + 10px);
+}
+
+/* list of cart items */
+.main-page-body .shopping-cart .cart-item-container {
+    outline: black solid 1px;
+    overflow-y: auto;
+    margin-bottom: var(--form-item-spacer);
+}
+
+/* cart item main container */
+.main-page-body .shopping-cart .cart-item-container .cart-item {
+    margin: 5px;
+}
+
+/* cart item name */
+.main-page-body .shopping-cart .cart-item-container .cart-item .cart-item-info-container .cart-item-name {
+    font-size: var(--cart-item-font-size);
+}
+
+/* cart item price */
+.main-page-body .shopping-cart .cart-item-container .cart-item .cart-item-info-container .cart-item-price {
+    font-size: var(--cart-item-font-size);
+    margin-left: auto;
+}
+
+/* cart item option name */
+.main-page-body .shopping-cart .cart-item-container .cart-item .cart-item-options-container .cart-item-option-name {
+    font-size: var(--cart-item-option-font-size);
+    margin-left: 10px;
+}
+
+/* cart item option price */
+.main-page-body .shopping-cart .cart-item-container .cart-item .cart-item-options-container .cart-item-option-price {
+    font-size: var(--cart-item-option-font-size);
+    margin-left: auto;
+}
+
+/* total price */
+.main-page-body .shopping-cart .cart-total-price-container {
+    font-size: var(--cart-item-font-size);
+    margin-right: 20px;
+    align-self: flex-end;
+}
